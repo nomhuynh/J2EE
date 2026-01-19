@@ -160,6 +160,41 @@ Exercises will be organized by topic. Each exercise directory will contain:
 
 ## 🔧 Common Maven Dependencies
 
+### Jakarta EE (Modern)
+```xml
+<!-- Servlet API -->
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>5.0.0</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- JSP API -->
+<dependency>
+    <groupId>jakarta.servlet.jsp</groupId>
+    <artifactId>jakarta.servlet.jsp-api</artifactId>
+    <version>3.0.0</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- JSTL -->
+<dependency>
+    <groupId>jakarta.servlet.jsp.jstl</groupId>
+    <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+    <version>2.0.0</version>
+</dependency>
+
+<!-- JPA -->
+<dependency>
+    <groupId>jakarta.persistence</groupId>
+    <artifactId>jakarta.persistence-api</artifactId>
+    <version>3.0.0</version>
+</dependency>
+```
+
+### Legacy Java EE (javax.*)
+For older projects or compatibility with Java EE 8 and earlier:
 ```xml
 <!-- Servlet API -->
 <dependency>
@@ -167,21 +202,6 @@ Exercises will be organized by topic. Each exercise directory will contain:
     <artifactId>javax.servlet-api</artifactId>
     <version>4.0.1</version>
     <scope>provided</scope>
-</dependency>
-
-<!-- JSP API -->
-<dependency>
-    <groupId>javax.servlet.jsp</groupId>
-    <artifactId>javax.servlet.jsp-api</artifactId>
-    <version>2.3.3</version>
-    <scope>provided</scope>
-</dependency>
-
-<!-- JSTL -->
-<dependency>
-    <groupId>javax.servlet</groupId>
-    <artifactId>jstl</artifactId>
-    <version>1.2</version>
 </dependency>
 
 <!-- JPA -->
