@@ -27,3 +27,4 @@ public class BookService {
         books.removeIf(book -> book.getId() == id);
     } 
 }
+
