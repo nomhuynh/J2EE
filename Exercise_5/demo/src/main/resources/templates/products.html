@@ -20,10 +20,16 @@
                 <p class="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">Inventory</p>
                 <h1 class="mt-1 text-3xl font-bold text-slate-900">Product Catalog</h1>
             </div>
-            <a th:href="@{/products/create}"
-               class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-700">
-                Add New Product
-            </a>
+            <div class="flex flex-wrap gap-2">
+                <a th:href="@{/categories}"
+                   class="inline-flex items-center justify-center rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50">
+                    Manage Categories
+                </a>
+                <a th:href="@{/products/create}"
+                   class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-700">
+                    Add New Product
+                </a>
+            </div>
         </div>
 
         <div class="overflow-hidden rounded-2xl border border-slate-200">
